@@ -119,7 +119,7 @@ yrm use verdaccio
 新建账号:
 
 ```shell
-npm add test--registry http://192.168.x.x:4873
+npm add test --registry http://192.168.x.x:4873
 username: test
 password: ****
 ```
