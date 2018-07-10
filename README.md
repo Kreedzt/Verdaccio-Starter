@@ -9,8 +9,8 @@
 
 ## 服务端部署
 
-> 参考我的配置文件
-[config.yaml]('./config.yaml')
+> 参考我的配置文件 <a href="./config.yaml">config.yaml</a>
+
 
 ### 依赖
 
