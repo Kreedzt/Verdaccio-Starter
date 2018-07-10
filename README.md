@@ -35,9 +35,8 @@ npm i -g verdaccio pm2
 # 该配置为包存储路径, 默认相对路径, 所以此处是C盘的${user}/.config下, 建议修改
 storage: ./storage
 
-# 若修改到其他磁盘, 支持2种写法:
+# 若修改到其他磁盘, 使用以下:
 storage: f:/storage
-storage: /f/storage
 
 # 通常第22行
 # 修改 npm 源(也可不修改, 单纯添加配置)
