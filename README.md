@@ -10,7 +10,7 @@
 ## 服务端部署
 
 > 参考我的配置文件
-[config.yaml]('config.yaml')
+[config.yaml]('./config.yaml')
 
 ### 依赖
 
@@ -127,7 +127,7 @@ password: ****
 登陆账号(若和新建账号同一窗口, 跳过此步):
 
 ```shell
-npm login --registry http://192.168.1.4:4873
+npm login --registry http://192.168.x.x:4873
 ```
 
 发布私有包:
