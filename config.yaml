@@ -7,7 +7,7 @@
 #
 
 # path to a directory with all packages
-storage: /f/private-npm/verdaccio/storage
+storage: f:/private-npm/verdaccio/storage
 
 auth:
   htpasswd:
@@ -20,19 +20,19 @@ auth:
 uplinks:
   taobao:
     url: https://registry.npm.taobao.org/
-  # cnpm:
-  #   url: http://r.cnpmjs.org/
+  cnpm:
+    url: http://r.cnpmjs.org/
   npmjs:
     url: https://registry.npmjs.org/
-  # yarn:
-  #   url: https://registry.yarnpkg.com
+  yarn:
+    url: https://registry.yarnpkg.com
 
 packages:
   '@*/*':
     # scoped packages
     access: $all
     publish: $authenticated
-    proxy: taobao
+    proxy: npmjs
 
   '**':
     # allow all users (including non-authenticated users) to read and
@@ -47,7 +47,11 @@ packages:
     publish: $authenticated
 
     # if package is not available locally, proxy requests to 'npmjs' registry
-    proxy: taobao
+    proxy: npmjs
+
+publish:
+  # 允许离线上传
+  allow_offline: true
 
 # To use `npm audit` uncomment the following section
 middlewares:
